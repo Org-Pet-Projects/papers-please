@@ -56,7 +56,7 @@ git remote add upstream git@github.com:Org-Pet-Projects/papers-please.git
 ```
 
 ### Choosing What to Work On
-- Check the **Issues** tab.
+- Check the **[Issues](https://github.com/Org-Pet-Projects/papers-please/issues)** tab.
 - Look for labels such as:
   - `good first issue`
   - `backend`
