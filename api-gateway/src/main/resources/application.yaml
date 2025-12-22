@@ -1,6 +1,24 @@
 spring:
   application:
     name: api-gateway
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9090/realms/papers-please
+          jwk-set-uri: http://localhost:9090/realms/papers-please/protocol/openid-connect/certs
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+
+jwt:
+  auth:
+    converter:
+      resource-id: api-gateway
+      principle-attribute: preferred_username
 
 server:
   port: 8080
